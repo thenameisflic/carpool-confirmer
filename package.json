@@ -24,10 +24,15 @@
     "jest": "^24.1.0",
     "jetifier": "^1.6.1",
     "metro-react-native-babel-preset": "^0.54.1",
+    "react-native-jest-mocks": "^1.4.0",
     "react-test-renderer": "16.8.6"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "setupFiles": [
+      "./node_modules/react-native-gesture-handler/jestSetup.js",
+      "./jest-setup.js"
+    ]
   },
   "rnpm": {
     "fonts": "assets/fonts"

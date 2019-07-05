@@ -1,6 +1,5 @@
 import React from "react";
-import { View, StyleSheet, Button } from "react-native";
-import Title from "../typography/Title";
+import { View, StyleSheet } from "react-native";
 import theme from "../../theme";
 import RoleIcon from "../ui/RoleIcon";
 import RoleToggler from "../ui/RoleToggler";

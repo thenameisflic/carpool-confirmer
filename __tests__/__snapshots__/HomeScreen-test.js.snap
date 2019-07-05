@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders HomeScreen correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "stretch",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+      "paddingHorizontal": 8,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Nunito Regular",
+          "fontSize": 34,
+        },
+        Object {
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Selecione o seu perfil
+  </Text>
+  <View
+    style={
+      Object {
+        "flexDirection": "row",
+        "justifyContent": "space-around",
+        "marginTop": 40,
+      }
+    }
+  >
+    <View
+      accessible={true}
+      clickable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../assets/images/DriverImg.png",
+          }
+        }
+        style={
+          Object {
+            "borderRadius": 60,
+            "height": 120,
+            "width": 120,
+          }
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Nunito Bold",
+              "fontSize": 20,
+            },
+            Object {
+              "color": "#FF5E57",
+              "marginTop": 8,
+            },
+          ]
+        }
+      >
+        Motorista
+      </Text>
+    </View>
+    <View
+      accessible={true}
+      clickable={true}
+      isTVSelectable={true}
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "alignItems": "center",
+          "opacity": 1,
+        }
+      }
+    >
+      <Image
+        source={
+          Object {
+            "testUri": "../../../assets/images/PassengerImg.png",
+          }
+        }
+        style={
+          Object {
+            "borderRadius": 60,
+            "height": 120,
+            "width": 120,
+          }
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "fontFamily": "Nunito Bold",
+              "fontSize": 20,
+            },
+            Object {
+              "color": "#FF5E57",
+              "marginTop": 8,
+            },
+          ]
+        }
+      >
+        Passageiro
+      </Text>
+    </View>
+  </View>
+</View>
+`;

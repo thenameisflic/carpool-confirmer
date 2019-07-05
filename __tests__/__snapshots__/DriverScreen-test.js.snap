@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders DriverScreen correctly 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#fff",
+      "flex": 1,
+      "justifyContent": "center",
+      "paddingHorizontal": 16,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Nunito Regular",
+          "fontSize": 24,
+        },
+        Object {
+          "textAlign": "center",
+        },
+      ]
+    }
+  >
+    Peça para o seu passageiro escanear o código abaixo
+  </Text>
+  <View
+    style={
+      Object {
+        "height": 300,
+        "marginTop": 24,
+        "width": 300,
+      }
+    }
+  />
+  <View
+    accessible={true}
+    clickable={true}
+    isTVSelectable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "alignSelf": "stretch",
+        "backgroundColor": "#FF5E57",
+        "borderRadius": 4,
+        "height": 48,
+        "justifyContent": "center",
+        "marginTop": 24,
+        "opacity": 1,
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "fontFamily": "Nunito Bold",
+            "fontSize": 20,
+          },
+          Object {
+            "color": "#fff",
+          },
+        ]
+      }
+    >
+      Continuar
+    </Text>
+  </View>
+</View>
+`;

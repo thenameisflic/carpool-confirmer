@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Body correctly 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Nunito Sans Regular",
+        "fontSize": 16,
+      },
+      undefined,
+    ]
+  }
+>
+  Test Body
+</Text>
+`;
+
+exports[`renders Buttons correctly 1`] = `
+<View
+  accessible={true}
+  clickable={false}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#FF5E57",
+      "borderRadius": 4,
+      "height": 48,
+      "justifyContent": "center",
+      "opacity": 1,
+    }
+  }
+>
+  <Text
+    style={
+      Array [
+        Object {
+          "fontFamily": "Nunito Bold",
+          "fontSize": 20,
+        },
+        Object {
+          "color": "#fff",
+        },
+      ]
+    }
+  >
+    Test Button
+  </Text>
+</View>
+`;
+
+exports[`renders Titles correctly 1`] = `
+<Text
+  style={
+    Array [
+      Object {
+        "fontFamily": "Nunito Light",
+        "fontSize": 96,
+      },
+      undefined,
+    ]
+  }
+>
+  Test Title
+</Text>
+`;

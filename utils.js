@@ -6,3 +6,11 @@ export const createResetAction = navigationOpts => {
     actions: [NavigationActions.navigate(navigationOpts)]
   });
 };
+
+export const mockFetch = response => {
+  const mockSuccessResponse = response;
+  const mockJsonPromise = Promise.resolve(mockSuccessResponse);
+  return Promise.resolve({
+    json: () => mockJsonPromise
+  });
+};
