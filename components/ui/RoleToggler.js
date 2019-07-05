@@ -1,13 +1,13 @@
 import React from "react";
 import { TouchableOpacity, StyleSheet, Image } from "react-native";
 import RoleIcon from "./RoleIcon";
-import theme from "../theme";
-import ChevronRight from "../assets/images/ChevronRight.png";
+import theme from "../../theme";
+import ChevronRight from "../../assets/images/ChevronRight.png";
 
-export default function RoleToggler({onPress}) {
+export default function RoleToggler({role, onPress}) {
   return (
     <TouchableOpacity style={styles.container} onPress={onPress}>
-      <RoleIcon style={styles.icon} />
+      <RoleIcon style={styles.icon} role={role} />
       <Image source={ChevronRight} style={styles.chevron} />
     </TouchableOpacity>
   );

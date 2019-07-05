@@ -1,7 +1,7 @@
 import React from "react";
 import { TouchableOpacity, StyleSheet } from "react-native";
-import theme from "../theme";
-import Title from "./typography/Title";
+import theme from "../../theme";
+import Title from "../typography/Title";
 
 export default function Button({ onPress, title, style }) {
   return (

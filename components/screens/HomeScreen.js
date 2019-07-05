@@ -1,7 +1,9 @@
 import React from "react";
 import { TouchableOpacity, View, StyleSheet, Image } from "react-native";
-import Title from "./typography/Title";
-import theme from "../theme";
+import Title from "../typography/Title";
+import theme from "../../theme";
+import DriverIcon from "../../assets/images/DriverImg.png";
+import PassengerIcon from "../../assets/images/PassengerImg.png";
 
 export default function Home({navigation}) {
   const { navigate } = navigation;
@@ -11,11 +13,11 @@ export default function Home({navigation}) {
       <Title size="h4" style={styles.title}>Selecione o seu perfil</Title>
       <View style={styles.row}>
         <TouchableOpacity style={styles.role} onPress={() => navigate("Driver")}>
-          <Image style={styles.roleImage} source={{uri: "https://placehold.it/120x120?text=Motorista"}} />
+          <Image style={styles.roleImage} source={DriverIcon} />
           <Title style={styles.roleTitle} size="h6">Motorista</Title>
         </TouchableOpacity>
         <TouchableOpacity style={styles.role} onPress={() => navigate("Passenger")}>
-          <Image style={styles.roleImage} source={{uri: "https://placehold.it/120x120?text=Passageiro"}} />
+          <Image style={styles.roleImage} source={PassengerIcon} />
           <Title style={styles.roleTitle} size="h6">Passageiro</Title>
         </TouchableOpacity>
       </View>

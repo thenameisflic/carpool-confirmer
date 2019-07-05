@@ -1,13 +1,12 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
-import Title from "./typography/Title";
-import Body from "./typography/Body";
-import Button from "./Button";
-import theme from "../theme";
-import { createResetAction } from "../utils";
-import { ROLES } from "../constants";
+import Title from "../typography/Title";
+import Body from "../typography/Body";
+import Button from "../ui/Button";
+import { createResetAction } from "../../utils";
+import { ROLES } from "../../constants";
 import MapView, { Marker } from "react-native-maps";
-import { confirmDriver, confirmPassenger } from "../api";
+import { confirmDriver, confirmPassenger } from "../../api";
 
 export default function ShareLocationScreen({ navigation }) {
   const role = navigation.getParam("role", "");

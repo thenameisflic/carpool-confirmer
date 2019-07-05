@@ -1,9 +1,9 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
-import Title from "./typography/Title";
-import Button from "./Button";
-import theme from "../theme";
-import { createResetAction } from "../utils";
+import { View, StyleSheet, Image } from "react-native";
+import Title from "../typography/Title";
+import Button from "../ui/Button";
+import { createResetAction } from "../../utils";
+import SuccessIcon from "../../assets/images/SuccessImg.png";
 
 export default function ShareLocationScreen({ navigation }) {
   return (
@@ -11,7 +11,7 @@ export default function ShareLocationScreen({ navigation }) {
       <Title size="h5" style={styles.textCenter}>
         Carona registrada com sucesso!
       </Title>
-      <View style={styles.illustration} />
+      <Image style={styles.illustration} source={SuccessIcon} />
       <Button
         style={styles.button}
         title="Iniciar outra carona"
@@ -33,7 +33,6 @@ const styles = StyleSheet.create({
   illustration: {
     width: 300,
     height: 300,
-    backgroundColor: theme.primaryColor,
     borderRadius: 150,
     marginTop: 24
   },

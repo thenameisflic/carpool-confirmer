@@ -1,14 +1,14 @@
 import React from "react";
 import { View, StyleSheet, Button } from "react-native";
-import Title from "./typography/Title";
-import theme from "../theme";
-import RoleIcon from "./RoleIcon";
-import RoleToggler from "./RoleToggler";
+import Title from "../typography/Title";
+import theme from "../../theme";
+import RoleIcon from "../ui/RoleIcon";
+import RoleToggler from "../ui/RoleToggler";
 import QRCodeScanner from "react-native-qrcode-scanner";
-import { ROLES } from "../constants";
-import { createResetAction } from "../utils";
+import { ROLES } from "../../constants";
+import { createResetAction } from "../../utils";
 import RNLocation from "react-native-location";
-import { scanPassenger } from "../api";
+import { scanPassenger } from "../../api";
 
 export default function PassengerScreen({ navigation }) {
   const onQrCode = async e => {
@@ -79,12 +79,13 @@ const styles = StyleSheet.create({
 
 PassengerScreen.navigationOptions = ({ navigation }) => ({
   title: "Passageiro",
-  headerLeft: <RoleIcon style={styles.headerLeft} />,
+  headerLeft: <RoleIcon style={styles.headerLeft} role={ROLES.PASSENGER} color="primary" />,
   headerRight: (
     <View style={styles.headerRight}>
       <RoleToggler
         style={styles.headerRight}
         onPress={() => navigation.navigate("Driver")}
+        role={ROLES.DRIVER}
       />
     </View>
   )

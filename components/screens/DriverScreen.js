@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { View, StyleSheet, Image, Alert } from "react-native";
-import Title from "./typography/Title";
-import theme from "../theme";
-import RoleIcon from "./RoleIcon";
-import RoleToggler from "./RoleToggler";
-import { createResetAction } from "../utils";
-import { ROLES } from "../constants";
-import { createRide, fetchRide } from "../api";
-import Button from "./Button";
-import RNLocation from 'react-native-location';
+import Title from "../typography/Title";
+import theme from "../../theme";
+import RoleIcon from "../ui/RoleIcon";
+import RoleToggler from "../ui/RoleToggler";
+import { createResetAction } from "../../utils";
+import { ROLES } from "../../constants";
+import { createRide, fetchRide } from "../../api";
+import Button from "../ui/Button";
+import RNLocation from "react-native-location";
 
 export default function DriverScreen({ navigation }) {
   const [id, setId] = useState(null);
@@ -17,9 +17,9 @@ export default function DriverScreen({ navigation }) {
   useEffect(() => {
     (async () => {
       RNLocation.requestPermission({
-        ios: 'whenInUse',
+        ios: "whenInUse",
         android: {
-          detail: 'coarse',
+          detail: "coarse",
           rationale: {
             title: "Nós precisamos de acesso à sua localização",
             message: "",
@@ -131,7 +131,9 @@ const styles = StyleSheet.create({
 
 DriverScreen.navigationOptions = ({ navigation }) => ({
   title: "Motorista",
-  headerLeft: <RoleIcon style={styles.headerLeft} />,
+  headerLeft: (
+    <RoleIcon style={styles.headerLeft} role={ROLES.DRIVER} color="primary" />
+  ),
   headerStyle: {
     elevation: 0,
     shadowOpacity: 0
@@ -141,6 +143,7 @@ DriverScreen.navigationOptions = ({ navigation }) => ({
       <RoleToggler
         style={styles.headerRight}
         onPress={() => navigation.navigate("Passenger")}
+        role={ROLES.PASSENGER}
       />
     </View>
   )

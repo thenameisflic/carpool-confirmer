@@ -1,9 +1,9 @@
-import HomeScreen from "./HomeScreen";
 import { createStackNavigator } from "react-navigation";
-import DriverScreen from "./DriverScreen";
-import PassengerScreen from "./PassengerScreen";
-import ShareLocationScreen from "./ShareLocationScreen";
-import RideFinishedScreen from "./RideFinishedScreen";
+import HomeScreen from "./screens/HomeScreen";
+import DriverScreen from "./screens/DriverScreen";
+import PassengerScreen from "./screens/PassengerScreen";
+import ShareLocationScreen from "./screens/ShareLocationScreen";
+import RideFinishedScreen from "./screens/RideFinishedScreen";
 
 const AppNavigator = createStackNavigator({
     Home: HomeScreen,
