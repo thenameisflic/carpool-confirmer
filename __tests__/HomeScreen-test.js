@@ -5,6 +5,8 @@ import { TouchableOpacity } from "react-native";
 
 import renderer from "react-test-renderer";
 
+jest.mock("react-native-location", () => ({requestPermission: () => {}, configure: () => {}}))
+
 it("renders HomeScreen correctly", () => {
   const tree = renderer.create(<HomeScreen navigation={{navigate: ""}} />).toJSON();
   expect(tree).toMatchSnapshot();
