@@ -29,6 +29,6 @@ react-native run-android
 
 ### Observações
 
-- Há um .APK está disponível na aba Downloads para facilidade de testes.
+- Há um .APK está disponível na aba [Releases](https://github.com/thenameisflic/carpool-confirmer/releases) para facilidade de testes.
 - A API está hospedada em um servidor para facilidade de testes.
 - Por fins de simplicidade, as credenciais estão disponíveis junto ao código-fonte.
