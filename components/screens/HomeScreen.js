@@ -1,12 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { TouchableOpacity, View, StyleSheet, Image } from "react-native";
 import Title from "../typography/Title";
 import theme from "../../theme";
 import DriverIcon from "../../assets/images/DriverImg.png";
 import PassengerIcon from "../../assets/images/PassengerImg.png";
+import RNLocation from "react-native-location";
 
 export default function Home({navigation}) {
   const { navigate } = navigation;
+
+  useEffect(() => {
+    RNLocation.requestPermission({
+      ios: "whenInUse",
+      android: {
+        detail: "coarse",
+        rationale: {
+          title: "Nós precisamos de acesso à sua localização",
+          message: "",
+          buttonPositive: "OK",
+          buttonNegative: "Cancelar"
+        }
+      }
+    });
+    RNLocation.configure({ distanceFilter: 0 });
+  }, []);
 
   return (
     <View style={styles.container}>

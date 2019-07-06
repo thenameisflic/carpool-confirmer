@@ -11,19 +11,6 @@ import { scanPassenger } from "../../api";
 
 export default function PassengerScreen({ navigation }) {
   const onQrCode = async e => {
-    RNLocation.requestPermission({
-      ios: "whenInUse",
-      android: {
-        detail: "coarse",
-        rationale: {
-          title: "Nós precisamos de acesso à sua localização",
-          message: "",
-          buttonPositive: "OK",
-          buttonNegative: "Cancelar"
-        }
-      }
-    });
-    RNLocation.configure({ distanceFilter: 0 });
     const location = await RNLocation.getLatestLocation({ timeout: 60000 });
     const position = `${location.latitude},${location.longitude}`;
     const response = await scanPassenger(e.data, position);
